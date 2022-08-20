@@ -1,48 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-.head{
+
+.head {
     display: flex;
     background-image: url(images/top-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.head-content{
+
+.head-content,
+.dream-content {
     flex-basis: 60%;
     padding: 5%;
 }
-.head-content h1{
+
+.head-content h1,
+.dream-content h1 {
     font-size: 50px;
 }
-.head-content .name{
+
+.head-content .name {
     color: orange;
 }
-.head-content p{
+
+.head-content p,
+.dream-content p {
     text-align: justify;
     margin-bottom: 30px;
 }
-.hire{
+
+.hire,
+.resume {
     padding: 15px 35px;
     font-size: 20px;
     font-weight: 400;
-    background-image: linear-gradient(to right,#F78667,#FB6656);
+    background-image: linear-gradient(to right, #F78667, #FB6656);
     border: none;
     color: white;
     text-decoration: none;
     border-radius: 3px;
 }
-.head-img img{
+
+.head-img img,
+.dream-img img {
     width: 80%;
     margin: 20px;
     text-align: center;
 }
+
+.dream-big {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dream-content h3 {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
 @media screen and (max-width: 780px) {
     .head {
-      flex-direction: column-reverse;
-      text-align: center;
+        flex-direction: column-reverse;
+        text-align: center;
     }
-  }
+
+    .dream-big {
+        flex-direction: column;
+        text-align: center;
+    }
+}
