@@ -56,13 +56,57 @@ body {
 
 .dream-big {
     display: flex;
+    background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right;
 }
 
 .dream-content h3 {
     font-size: 20px;
     margin: 15px 0px;
+}
+.experience{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+}
+.experience-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.experience-area h4{
+    margin-top: 10px;
+    color: rgb(255, 94, 0);
+}
+.experience-left{
+    flex-basis: 40%;
+    margin-right: 50px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 6px solid #FB6857;
+}
+.experience-right{
+    flex-basis: 40%;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 6px solid blue;
+}
+.experience-area p{
+    text-align: justify;
+    margin-top: 15px;    
+}
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.278) -20px 25px 20px 20px;
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 19px;
 }
 
 @media screen and (max-width: 780px) {
@@ -74,5 +118,11 @@ body {
     .dream-big {
         flex-direction: column;
         text-align: center;
+    }
+    .experience-area{
+        flex-direction: column;
+    }
+    .experience-left,.experience-right{
+        margin: 20px 60px;
     }
 }
